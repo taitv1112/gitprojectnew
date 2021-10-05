@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+    fieldset{
+        border: none;
+    }
+    li:hover {
+        list-style-type: none;
+        background-color: orange;
+    }
+    .table5{
+        width: 100%;
+        weight: 100%;
+    }
+    .table4{
+        width: 500px;
+        weight: 250px;
+    }
+    .table2{
+        width: 100%;
+        weight: 100%;
+        background-color: #bce7e7;
+    }
+    .table3{
+        width: 100%;
+        weight: 100%;
+        background-color: #bce7e7;
+        text-align: center;
+    }
+
+
+</style>
+<body>
+<header>
+  <h2>Market Research Survey</h2>
+  <div>
+      Please take a few moments to complete this satisfaction survey.
+  </div>
+</header>
+<ul>
+    <li>
+        <fieldset class="title">
+            <legend >What is your age range?</legend>
+            <select>
+                <option value="18-24" id="a1">18-24</option>
+                <option value="25-34" id="a2">25-34</option>
+                <option value="35-50" id="a3">35-50</option>
+                <option value="50+" id="a4">50+</option>
+            </select>
+        </fieldset>
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend >What is your yearly income range?
+            </legend>
+            <select>
+                <option value="$0-$25,000">$0-$25,000</option>
+                <option value="$25,001-$50,000">$25,001-$50,000</option>
+                <option value="$50,001-$10,000">$50,001-$10,000</option>
+                <option value="$100,000+" >$100,000</option>
+            </select>
+        </fieldset>
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend for="sex1">Gender Identity</legend>
+            <table>
+                <tr>
+                    <th><input type="radio" value="sex" name="sex" id="sex1"></th>
+                    <th colspan="4"><label for="sex1">Male</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" value="sex" name="sex" id="sex2"></th>
+                    <th colspan="4"><label for="sex2">Female</label> </th>
+
+                </tr>
+                <tr>
+                    <th><input type="radio" value="sex" name="sex" id="sex3"></th>
+                    <th colspan="4"><label for="sex3">Nonbinary</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" value="sex" name="sex" id="sex4"></th>
+                    <th colspan="4"><label for="sex4">Other</label> </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th colspan="4"><input type="text" name="sex" value maxlength="250" id="sex4"> </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><label id="sex1" style="display: block">
+                        "Maximum of " <var id="rangerMaxMsg505">250</var> " characters.&nbsp;&nbsp;&nbsp;"
+                        <em style="display: inline;">
+                            " Current Used:"
+                            <var id="rangerUsedMsg505">0</var>
+                            " characters."
+                        </em>
+                    </label> </th>
+                </tr>
+            </table>
+        </fieldset>
+    </li>
+    <br>
+    <li>
+        <fieldset class="title">
+            <legend for="pd1">Which of the following products have your purchased in the last 2 months. Please check all that apply.</legend>
+            <table>
+                <tr>
+                    <th><input type="checkbox" value="product" name="product" id="pd1"></th>
+                    <th colspan="4"><label for="pd1">Product 1</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" value="product" name="product" id="pd2"></th>
+                    <th colspan="4"><label for="pd2">Product 2</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" value="product" name="product" id="pd3"></th>
+                    <th colspan="4"><label for="pd3">Product 3</label> </th>
+                </tr>
+            </table>
+        </fieldset>
+
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend for="pd1">How often would you use our new product?
+            </legend>
+            <table>
+                <tr>
+                    <th><input type="radio" value="daily" name="date" id="date1"></th>
+                    <th colspan="4"><label for="date1">Daily</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" value="Weekly" name="date" id="date2"></th>
+                    <th colspan="4"><label for="date2">Weekly</label> </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" value="Monthly" name="date" id="date3"></th>
+                    <th colspan="4"><label for="date3">Monthly</label> </th>
+                </tr>
+
+            </table>
+        </fieldset>
+
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend for="pd1">What would you pay for the new product?
+
+            </legend>
+            <table>
+                <tr>
+                    <th><input id="dol1" type="text" value size="10" tabindex="0"></th>
+                    <th>.</th>
+                    <th><input id="dol2" type="text" value size="2" tabindex="0"></th>
+                </tr>
+                <tr>
+                    <th><label for="dol1">Dollars</label></th>
+                    <th></th>
+                    <th><label for="dol2">Cent</label></th>
+
+                </tr>
+            </table>
+        </fieldset>
+
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend for="text1">What would you pay for the new product?</legend><br>
+                <textarea id="text1" with="100%" weight="100%"> </textarea>
+        </fieldset>
+
+    </li>
+    <li>
+        <fieldset class="title">
+            <legend for="text1">Please rate your level of agreement with the following statements.
+            </legend><br>
+            <div class="table4">
+            <table class="table5" border="0.1px">
+                <tr>
+                    <th class="table3"></th>
+                    <th class="table3">Strongly Disagree</th>
+                    <th class="table3">Disagree</th>
+                    <th class="table3">Agree</th>
+                    <th class="table3">Strongly Agree</th>
+                </tr>
+                <tr>
+                    <th>Our products are priced fairly.</th>
+                    <th class="table3"><input type="radio" value="1" name="1" id="1"><br><label for="1">1</label></th>
+                    <th class="table3"><input type="radio" value="2" name="1" id="2"><br><label for="2">2</label></th>
+                    <th class="table3"><input type="radio" value="3" name="1" id="3"><br><label for="3">3</label></th>
+                    <th class="table3"><input type="radio" value="4" name="1" id="4"><br><label for="4">4</label></th>
+
+                </tr>
+                <tr>
+                    <th class="table2">Our products are high quality.</th>
+                    <th class="table3"><input type="radio" value="1" name="2" id="1"><br><label for="1">1</label></th>
+                    <th class="table3"><input type="radio" value="2" name="2" id="2"><br><label for="2">2</label></th>
+                    <th class="table3"><input type="radio" value="3" name="2" id="3"><br><label for="3">3</label></th>
+                    <th class="table3"><input type="radio" value="4" name="2" id="4"><br><label for="4">4</label></th>
+
+                </tr>
+                <tr>
+                    <th>You would recommend our product to a friend or coworker.</th>
+                    <th class="table3"><input type="radio" value="1" name="3" id="1"><br><label for="1">1</label></th>
+                    <th class="table3"><input type="radio" value="2" name="3" id="2"><br><label for="2">2</label></th>
+                    <th class="table3"><input type="radio" value="3" name="3" id="3"><br><label for="3">3</label></th>
+                    <th class="table3"><input type="radio" value="4" name="3" id="4"><br><label for="4">4</label></th>
+
+                </tr>
+
+
+            </table>
+            </div>
+        </fieldset>
+
+    </li>
+    <li><input type="submit" value="Submit"></li>
+</ul>
+</body>
+</html>
