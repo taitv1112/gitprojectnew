@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .table{
+        width: 100%;
+        weight: 100%;
+    }
+    .contain {
+        width: 500px;
+        height: 250px;
+        background-color: #debd7f;
+        padding: 25px;
+    }
+    .title {
+        color: #0000f6;
+        background-color: lightblue;
+        text-align: left;
+    }
+    .subtitle{
+        color: #0000f6;
+        text-align: left;
+
+    }
+</style>
+<body>
+<div class="contain">
+    <table class="table">
+        <tr>
+            <th colspan="5" class="title">ĐĂNG KÝ HỌC VIÊN</th>
+
+        </tr>
+        <tr>
+            <th class="subtitle">Họ và tên</th>
+            <th colspan="4" style="text-align: left"><input type="text" name="fullname"></th>
+        </tr>
+        <tr>
+            <th class="subtitle">Ngày sinh</th>
+            <th colspan="4" style="text-align: left"><input type="text" name="Age" id="age"></th>
+        </tr>
+        <tr>
+            <th class="subtitle"><label for="sex">Giới tính</label></th>
+            <th colspan="4" style="text-align: left"><label for="sex"><input type="radio" name="Sex" id="sex">Nam<input type="radio" name="Sex" id="sex"> Nữ</label></th>
+
+        </tr>
+        <tr>
+            <th class="subtitle" style="vertical-align: top">Địa chỉ</th>
+            <th colspan="4" style="text-align: left"><textarea></textarea></th>
+        </tr>
+        <tr>
+            <th class="subtitle">Lớp</th>
+            <th colspan="4" style="text-align: left"><label><select>
+                <option>Chọn lớp</option>
+            </select></label></th>
+        </tr>
+        <tr>
+            <th class="subtitle">Email</th>
+            <th colspan="4" style="text-align: left"><label><input type="text" name="emai" id="Email"></label></th>
+        </tr>
+        <tr>
+            <th class="subtitle">Điện Thoại</th>
+            <th colspan="4" style="text-align: left"><label><input type="text" name="phone" id="phone"></label></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="4" style="text-align: left"><input type="submit" value="Đăng ký"></th>
+            <th><input type="reset" value="Nhập lại"></th>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>
